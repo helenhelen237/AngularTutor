@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  position: relative;
+  max-width: auto;
+  border: aquamarine 2px solid;
+}
+
+.nav {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  margin-left: -15px;
+  border: deeppink 2px solid;
+  padding: 5px;
+  color: deeppink;
+}
+
+.section {
+  box-sizing: border-box;
+  margin-right: -15px;
+  border: gold 2px solid;
+  padding: 5px;
+}
+
+.nav2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 200px;
+  color: deeppink;
+  border: deeppink 2px solid;
+}
+
+
+
+.section2 {
+  margin-left: 185px;
+  width: auto;
+  border: gold 2px solid;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+.body {
+  margin-bottom: 120px;
+}
