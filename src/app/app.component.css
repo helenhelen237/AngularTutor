@@ -1,0 +1,20 @@
+.container {
+  background: linear-gradient(to bottom right, darkslateblue, pink);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.box {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  margin-top: 150px;
+}

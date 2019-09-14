@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Student } from '../../shared/student.model';
 
 @Component({
   // select: '[app-server]',
@@ -8,37 +7,50 @@ import { Student } from '../../shared/student.model';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent {
-    serverId = 10;
-    serverStatus = 'offLine';
-    counter = 0;
-    isLogin = false;
-    userName: string;
-    students: Student[] = [new Student('Bill Gates', 'Computer Science'),
-                           new Student('Steve Jobs', 'Computer Science'),
-                           new Student('Elon Musk', 'Computer Science')];
+    meat: string = '';
+    veggie: string = '';
+    isCooked = false;
+    badDish = false;
+    dish: string = '';
+    allVeggies: string[] = ['菠菜', '白菜', '油菜', '蘑菇', '芹菜'];
+    allMeat: string[] = ['牛肉', '鸡肉', '羊肉', '猪肉', '鱼'];
 
-    getServerStatus() {
-      return this.serverStatus;
+    cook() {
+        if (this.meat == '' && this.veggie == '') {
+          return;
+        } else if (this.meat == '') {
+            if (this.allVeggies.includes(this.veggie)) {
+            this.dish = '炒' + this.veggie;
+            this.isCooked = true;
+            } else {
+                this.dish = this.veggie;
+                this.badDish = true;
+            }
+        } else if (this.veggie == '') {
+            if (this.allMeat.includes(this.meat)) {
+                this.dish = '炖' + this.meat;
+                this.isCooked = true;
+            } else {
+                this.dish = this.meat;
+                this.badDish = true;
+            }
+        } else {
+          if (this.allVeggies.includes(this.veggie) && this.allMeat.includes(this.meat)) {
+            this.dish = this.veggie + '炒' + this.meat;
+            this.isCooked = true;
+          } else {
+            this.dish = this.veggie + '和' + this.meat;
+            this.badDish = true;
+          }
+        }
+
     }
 
-    counterPlus() {
-     this.counter ++;
-    }
-
-    resetCounter() {
-      this.counter = 0;
-    }
-
-    login() {
-      this.isLogin = true;
-    }
-
-    signOut() {
-      this.isLogin = false;
-    }
-
-    // Event Binding
-    onUpdateUserName(event: Event) {
-      this.userName = (<HTMLInputElement>event.target).value;
+    reset() {
+      this.meat = '';
+      this.veggie = '';
+      this.isCooked = false;
+      this.badDish = false;
+      this.dish = '';
     }
 }

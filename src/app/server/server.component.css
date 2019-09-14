@@ -1,8 +1,18 @@
-.informBoxBoarder{
-  border-bottom: solid 2px;
-  border-left: solid 2px;
-  border-right: solid 2px;
-  border-top: solid 2px;
-  width: 300px;
-  border-color: cornflowerblue;
+.box{
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  width: 400px;
+  height: 200px;
 }
+
+.text {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  margin: 5px 40px;
+  padding: 5px;
+  height: 60px;
+}
+
+
