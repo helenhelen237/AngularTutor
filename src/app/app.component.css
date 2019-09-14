@@ -1,48 +1,32 @@
 .container {
-  background-color: #4CAF50;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.box {
-  background-color: white;
+  background: linear-gradient(to bottom right, darkslateblue, pink);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
-  height: 300px;
-  margin-top: 150px;
+  text-align: center;
+  min-height: 300px;
+  min-width: 100vw;
 }
 
 .text {
-  background-color: lightgrey;
-  color: grey;
+  background-color: transparent;
+  color: white;
+  text-align: center;
   margin: 5px 40px;
-  height: 50px;
-  padding-left: 10px;
+  padding: 5px;
+  height: 60px;
 }
 
 .button {
-  background-color: forestgreen;
-  border: none;
+  background-color: transparent;
+  border: white 1px solid;
+  border-radius: 4px;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 5px 40px;
-  width: 320px;
-}
-
-.span1 {
-  color: grey;
-  margin-left: 70px;
-}
-
-.span2 {
-  color: #4CAF50;
-  margin: auto 5px;
+  font-size: 12px;
+  margin: auto 20px;
+  width: 100px;
 }
