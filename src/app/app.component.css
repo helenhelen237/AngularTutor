@@ -1,0 +1,48 @@
+.container {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.box {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  margin-top: 150px;
+}
+
+.text {
+  background-color: lightgrey;
+  color: grey;
+  margin: 5px 40px;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.button {
+  background-color: forestgreen;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 40px;
+  width: 320px;
+}
+
+.span1 {
+  color: grey;
+  margin-left: 70px;
+}
+
+.span2 {
+  color: #4CAF50;
+  margin: auto 5px;
+}
